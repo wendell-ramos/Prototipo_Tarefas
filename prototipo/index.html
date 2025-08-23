@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Calendário de Tarefas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>📅 Calendário de Tarefas</h1>
+  </header>
+
+  <main>
+    <div id="mesNav">
+      <button id="mesAnterior" class="btn">&#8592;</button>
+      <span id="nomeMes" style="font-weight: 600; font-size: 1.3rem; margin: 0 10px;"></span>
+      <button id="mesProximo" class="btn">&#8594;</button>
+    </div>
+    <section id="calendario"></section>
+  </main>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <h3 id="tituloDia">Tarefas do Dia</h3>
+      <ul id="listaTarefas"></ul>
+
+      <hr>
+      <h4>Adicionar Nova Tarefa</h4>
+      <label>Descrição:</label>
+      <input type="text" id="descricao"><br>
+      <label>Responsável:</label>
+      <select id="responsavel">
+        <option value="">(Rodízio automático)</option>
+        <option>Diogo Berçocano</option>
+        <option>Thiago Henrique</option>
+        <option>Vinicius Lordron</option>
+        <option>Wendell Ramos</option>
+      </select><br>
+      <label>Horário:</label>
+      <input type="time" id="hora"><br>
+
+      <div class="botoes">
+        <button id="salvar" class="btn verde">Salvar</button>
+        <button id="cancelar" class="btn vermelho">Fechar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
